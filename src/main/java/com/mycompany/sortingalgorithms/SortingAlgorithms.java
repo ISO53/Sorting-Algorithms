@@ -57,11 +57,11 @@ public class SortingAlgorithms extends javax.swing.JFrame {
     public SortingAlgorithms() {
         initComponents();
 
-        try {
+        /*try {
             UIManager.setLookAndFeel(new FlatLightLaf());
-        } catch (UnsupportedLookAndFeelException ex) {
+        } catch (Exception ex) {
             Logger.getLogger(SortingAlgorithms.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
 
         SwingUtilities.updateComponentTreeUI(this);
         this.setLocationRelativeTo(null);

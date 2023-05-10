@@ -11,6 +11,21 @@
         <exec.mainClass>com.mycompany.sortingalgorithms.SortingAlgorithms</exec.mainClass>
     </properties>
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.mycompany.sortingalgorithms.SortingAlgorithms</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>
@@ -23,7 +38,8 @@
         <dependency>
             <groupId>com.formdev</groupId>
             <artifactId>flatlaf</artifactId>
-            <version>2.2</version>
+            <version>3.1.1</version>
+
         </dependency>
     </dependencies>
 </project>
